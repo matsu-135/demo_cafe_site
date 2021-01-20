@@ -1,0 +1,68 @@
+@charset "UTF-8";
+.wrapper {
+  max-width: 960px;               /*最大画面幅→960px*/
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+
+.lead {
+  padding: 30px 0;
+}
+
+
+@media print, screen and (min-width: 768px) {
+  .lead {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+
+.img-link-wrap {
+  margin-bottom: 40px;
+}
+
+
+@media print, screen and (min-width: 768px) {
+  .img-link-wrap {
+    display: -webkit-flex;        /*子要素を並列に*/
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 80px;
+  }
+  .img-link {
+    width: 50%;
+  }
+}
+
+
+.img-link a {
+  display: block;                /*表示形式→ブロック*/
+  position: relative;            /*要素の配置→相対座標に指定*/
+  z-index: 1;                    /*要素を重ねて表示する際の優先順度を1に*/
+}
+
+
+.img-link a .heading02 {
+  color: #fff;
+  z-index: 2;                    /*要素を重ねて表示する際の優先順度を2に*/
+  position: absolute;            /*要素の配置→絶対座標*/
+  width: 100%;
+  top: 50%;                      /*上部分→基準点から50%の位置に*/
+  left: 0;                       /*左部分→基準点から0の位置に*/
+  -webkit-transform: translate(0, -50%); /*要素の位置→50%分だけ上に*/
+  transform: translate(0, -50%);
+  margin-bottom: 0;
+}
+
+
+.img-link a .heading02 span {
+  border-color: #fff;
+}
+
+
+.img-link a img {
+  display: block;                /*表示形式→ブロック*/
+}

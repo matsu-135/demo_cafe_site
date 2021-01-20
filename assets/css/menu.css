@@ -1,0 +1,131 @@
+@charset "UTF-8";
+.header.header-menu {
+  background: url(../img/menu/hero_menu.jpg) no-repeat center center/cover; /*背景画像*/
+}
+
+
+.wrapper {
+  max-width: 960px;               /*最大画面幅→960px*/
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+
+.lead {
+  padding: 30px 0;
+}
+
+
+@media print, screen and (min-width: 768px) {
+  .lead {
+    width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+
+.lead-title {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: bold;              /*文字→太字*/
+  line-height: 1.2;               /*行の高さ→フォントサイズの1.2倍*/
+  font-family: 'TsukuARdGothic-Regular', "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+
+.menu {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;  /*罫線→下部1px/実線/灰色*/
+  list-style: none;               /*リストの黒丸→無し*/
+}
+
+
+@media print, screen and (min-width: 768px) {
+  .menu-wrap {
+    display: -webkit-flex;        /*子要素を並列に*/
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;      /*flexで並べた要素を複数行に*/
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .menu {
+    width: 33.33%;
+    padding: 0 30px;
+    margin-bottom: 60px;
+    border-bottom: none;          /*罫線下部→無し*/
+  }
+}
+
+
+.menu-img {
+  margin-bottom: 20px;
+}
+
+
+.menu-name-en {
+  font-size: 20px;
+  color: #876137;
+  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: bold;              /*文字→太字*/
+  margin-bottom: 15px;
+}
+
+
+.menu-name-ja {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+
+.menu-price {
+  font-size: 14px;
+  display: -webkit-flex;          /*子要素を並列に*/
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between; /*並列になった要素の幅を均等に*/
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+
+.menu-price + .menu-price {
+  margin-top: 5px;
+}
+
+
+.menu-category {
+  margin-bottom: 60px;
+}
+
+
+@media print, screen and (min-width: 768px) {
+  .menu-category {
+    margin: 0 -30px 60px;
+  }
+}
+
+
+/*--ページ上部へ戻るBTN--*/
+#pagetop{
+  clear: both;
+  position:fixed;
+  right:50px;
+  bottom:50px;
+  transition:1s;
+  opacity:0.7;
+}
+#pagetop a {
+  color: #fff;
+  font-size: 20pz;
+  background-color: gray;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  float: right;
+  border-radius: 30px;
+  width: 50px;
+  line-height: 50px;
+}
