@@ -109,15 +109,15 @@
 
 
 /*--ページ上部へ戻るBTN--*/
-#pagetop{
+#pagetop{             /*灰色丸部分*/
   clear: both;
-  position:fixed;
-  right:50px;
-  bottom:50px;
-  transition:1s;
-  opacity:0.7;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  transition: 1s;
+  opacity: 0.7;
 }
-#pagetop a {
+#pagetop a {          /*矢印部分*/
   color: #fff;
   font-size: 20pz;
   background-color: gray;
